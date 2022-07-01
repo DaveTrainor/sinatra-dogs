@@ -15,14 +15,20 @@ require 'sinatra/reloader' if development?
 #   end
 
 
-  get '/:name?' do |name|
-   if name
-      "Hello #{name}! D'ya like dags?"
-    else
-      "Hello stranger! D'ya like dags?"
-    end
-  end
+  # get '/:name?' do |n|
+  #  if name
+  #     "Hello #{name}! D'ya like dags?"
+  #   else
+  #     "Hello stranger! D'ya like dags?"
+  #   end
+  # end
 
-  # get '/:name?' do |name|
-  #   erb :index, :locals => {:name=>name}
-  #  end
+  get '/:name?' do |name|
+    if name
+       statement = "Hello #{name}! D'ya like dags?"
+    else
+       statement = "Hello stranger! D'ya like dags?"
+    end
+
+    erb :index, :locals => {:statement=>statement}
+   end

@@ -11,7 +11,7 @@ RSpec.describe "The dog server" do
         Sinatra::Application
     end
 
-    it 'confirms rspec is woring' do
+    it 'confirms rspec is working' do
       expect(true).to be(true)
     end
 
