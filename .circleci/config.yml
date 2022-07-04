@@ -12,14 +12,15 @@ orbs:
 jobs:
   build_and_test:
     docker:
-      - image: cimg/ruby:3.1.0
+      - image: cimg/ruby:2.6.8-node
     executor: ruby/default
     steps:
       - checkout
       #- gem install bundler:1.17.2
-      - run:
-          name: Which bundler?
-          command: bundle -v
+      # - run:
+      #     name: Which bundler?
+      #     command: bundle -v
+      # - gem install bundler:1.17.2
       #- ruby/bundle-install
       - ruby/install-deps
       - ruby/rspec-test
