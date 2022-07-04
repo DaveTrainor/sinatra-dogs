@@ -22,8 +22,8 @@ jobs:
       #     command: bundle -v
       # - gem install bundler:1.17.2
       #- ruby/bundle-install
-      - ruby/install-deps
-      - ruby/rspec-test
+      # - ruby/install-deps
+      # - ruby/rspec-test
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
