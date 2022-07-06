@@ -25,9 +25,9 @@ require 'sinatra/reloader' if development?
 
   get '/:name?' do |name|
     if name
-       statement = "Hello #{name}! D'ya like dags?"
+       statement = "Yo #{name}! D'ya like dags?"
     else
-       statement = "Hello stranger! D'ya like dags?"
+       statement = "Yo stranger! D'ya like dags?"
     end
 
     erb :index, :locals => {:statement=>statement}
