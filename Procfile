@@ -1,1 +1,1 @@
-web: bundle exec sinatra_server_dogs.rb
+web: bundle exec ruby sinatra_server_dogs.rb
