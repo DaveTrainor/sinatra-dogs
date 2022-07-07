@@ -1,1 +1,1 @@
-bundleweb: bundle exec ruby server.rb
+bundleweb: bundle exec ruby do-ya-like-dags.rb
