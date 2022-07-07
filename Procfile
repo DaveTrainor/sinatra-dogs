@@ -1,1 +1,1 @@
-bundleweb: bundle exec ruby do-ya-like-dags.rb
+web: bundle exec sinatra_server_dogs.rb
